@@ -1,0 +1,113 @@
+html,body {
+    background-color: #303030;
+    height: 100%;
+    color: white;
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 20px;
+}
+
+.white-mode {
+    background-color: white;
+    height: 100%;
+    color: black;
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 20px;
+}
+
+.section {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.sectionDesc {
+    margin-left: 5vw;
+    width: 50%
+}
+
+.sectionImg {
+    margin-left: 30px;
+    border-radius: 10px;
+    height: 360px;
+}
+
+@media screen and (max-width: 750px) {
+    .section {
+        display: block;
+        text-align: center;
+    }
+
+    .sectionDesc {
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .sectionDesc2 {
+        margin-bottom: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .sectionImg {
+        margin-left: auto;
+        margin-right: auto
+    }
+}
+
+.header {
+    width: 500px;
+    height: 600px;
+    margin:auto;
+    max-width:100%;
+    max-height:100%;
+    overflow:auto;
+}
+
+.button {
+  border: 3px solid #1880d6;
+  border-radius: 5px;
+  padding: 8px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.button:hover{
+    border: 3px solid #1880d6;
+    background-color: #1880d6;
+}
+
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #18191c;
+  color: white;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: #111;}
+
+ul.topnav li a.active {background-color: #4CAF50;}
+
+ul.topnav li.right {float: right;}
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.right,
+  ul.topnav li {float: none;}
+}: left;
+}
